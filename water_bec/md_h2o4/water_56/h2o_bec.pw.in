@@ -1,0 +1,32 @@
+&control
+      calculation  = 'scf'
+      prefix         = 'h2o_bec'
+      pseudo_dir =  '/home/amano/src/q-e-qe-6.7.0/pseudo/' 
+      outdir         = './work/'
+ 
+/
+&system
+      ibrav=1
+      celldm(1) =12
+      nat=3,
+      ntyp=2,
+      ecutwfc=80.0
+      nosym =.TRUE.
+/
+&electrons
+      conv_thr=1e-8
+/
+&ions
+/
+ATOMIC_SPECIES
+H   1.00d0 H.blyp-vbc.UPF
+O  16.0d0 O.blyp-mt.UPF
+ 
+ 
+ATOMIC_POSITIONS (angstrom)
+ O 0.0099 0.0099 0.0
+ H 1.8268000722893 -0.22230411358224 0.0095627904311208
+ H -0.22102934923963 1.8263423813731 0.0017417402311697
+ 
+K_POINTS (automatic)
+ 1 1 1 0 0 0

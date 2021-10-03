@@ -1,0 +1,186 @@
+====================================================================
+                      SLURM SrunProlog script
+--------------------------------------------------------------------
+   Running Slurm Job: JobName(106513)
+   Cluster: sauron
+   User: amano(1007)
+   Partition: sky6126  with Nodes: orc72
+
+   Modules loaded:
+     - intel/19.1.3.304
+     - oneapi/compiler-rt/2021.1.1
+     - oneapi/tbb/2021.1.1
+     - oneapi/mkl/2021.1.1
+     - impi/2021.1.1
+     - oneapi/mpi/2021.1.1
+
+   For more information check sacct e.g.:
+   sacct -j 106513 --format={details: e.g. jobid,start,end,node}
+====================================================================
+
+
+     Program PW2WANNIER v.6.4.1 starts on 28Jul2021 at  2: 5:31 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    24 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =      24
+ 
+  Reading nscf_save data
+
+     Reading data from directory:
+     ./work/tanryo.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation      = PBE ( 1  4  3  4 0 0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         982     982    244               113450   113450   14168
+     Max         984     984    246               113454   113454   14178
+     Sum       23581   23581   5901              2722817  2722817  340179
+ 
+
+     Check: negative core charge=   -0.000004
+
+     negative rho (up, down):  4.198E-02 0.000E+00
+ 
+  Spin CASE ( default = unpolarized )
+ 
+  Wannier mode is: standalone     
+ 
+  -----------------
+  *** Reading nnkp 
+  -----------------
+ 
+  Checking info from wannier.nnkp file
+ 
+  - Real lattice is ok
+  - Reciprocal lattice is ok
+  - K-points are ok
+  - Number of wannier functions is ok ( 37)
+  - All guiding functions are given 
+ 
+ Projections:
+    0.173450    0.268210    0.721450  0  1  1    1.000000
+    0.482850    0.076990    0.398060  0  1  1    1.000000
+    0.646640    0.703400    0.675050  0  1  1    1.000000
+    0.092810    0.479880    0.943510  0  1  1    1.000000
+    0.513780    0.925910    0.561010  0  1  1    1.000000
+    0.613920    0.400620    0.328700  0  1  1    1.000000
+    0.950160    0.385170    0.001680  0  1  1    1.000000
+    0.634990    0.326340    0.096860  0  1  1    1.000000
+    0.044230    0.643590    0.133110  0  1  1    1.000000
+    0.838180    0.861330    0.484370  0  1  1    1.000000
+    0.210210    0.613450    0.779060  0  1  1    1.000000
+    0.812210    0.129040    0.417510  0  1  1    1.000000
+    0.219920    0.638390    0.122540  0  1  1    1.000000
+    0.022770    0.353100    0.355530  0  1  1    1.000000
+    0.259380    0.130180    0.006540  0  1  1    1.000000
+    0.785450    0.769080    0.919050  0  1  1    1.000000
+    0.955640    0.115450    0.872630  0  1  1    1.000000
+    0.954020    0.136870    0.086040  0  1  1    1.000000
+    0.019990    0.162060    0.729340  0  1  1    1.000000
+    0.216570    0.615450    0.708490  0  1  1    1.000000
+    0.308130    0.997830    0.962480  0  1  1    1.000000
+    0.095960    0.876100    0.963510  0  1  1    1.000000
+    0.201220    0.474540    0.431130  0  1  1    1.000000
+    0.296040    0.439300    0.501270  0  1  1    1.000000
+    0.316310    0.346830    0.361710  0  1  1    1.000000
+    0.997920    0.694650    0.049560  0  1  1    1.000000
+    0.919150    0.099420    0.542500  0  1  1    1.000000
+    0.626680    0.442720    0.691440  0  1  1    1.000000
+    0.802210    0.583740    0.816940  0  1  1    1.000000
+    0.605290    0.051770    0.694680  0  1  1    1.000000
+    0.194860    0.849630    0.567340  0  1  1    1.000000
+    0.352900    0.996210    0.281480  0  1  1    1.000000
+    0.610960    0.783300    0.557800  0  1  1    1.000000
+    0.135000    0.606110    0.807700  0  1  1    1.000000
+    0.299720    0.209790    0.541400  0  1  1    1.000000
+    0.785760    0.935490    0.462520  0  1  1    1.000000
+    0.800510    0.842790    0.509980  0  1  1    1.000000
+ 
+  Reading data about k-point neighbours 
+ 
+  All neighbours are found 
+ 
+  Opening pp-files 
+ 
+ 
+  --------------------------
+  *** Compute  A projections
+  --------------------------
+ 
+  AMN: iknum =        1
+       1
+
+  AMN calculated
+ 
+  ---------------
+  *** Compute  M 
+  ---------------
+ 
+  MMN: iknum =        1
+       1
+
+  MMN calculated
+ 
+  -----------------------------------
+  *** Orbital terms are not computed 
+  -----------------------------------
+ 
+  ----------------
+  *** Write bands 
+  ----------------
+ 
+ 
+  --------------------
+  *** Write plot info 
+  --------------------
+ 
+ UNK: iknum =        1
+       1
+
+  UNK written
+ 
+  -----------------------------
+  *** Parity info is not printed 
+  -----------------------------
+ 
+  ------------
+  *** Stop pp 
+  ------------
+ 
+ 
+     init_pw2wan  :      1.50s CPU      3.80s WALL (       1 calls)
+     compute_amn  :      3.13s CPU      4.02s WALL (       1 calls)
+     compute_mmn  :      1.73s CPU      1.76s WALL (       1 calls)
+     write_unk    :      8.27s CPU     58.43s WALL (       1 calls)
+ 
+     PW2WANNIER   :     14.66s CPU   1m 8.06s WALL
+
+ 
+   This run was terminated on:   2: 6:39  28Jul2021            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
+ 
+
+====================================================================
+                      SLURM SrunEpilog script
+--------------------------------------------------------------------
+   Finished job
+====================================================================

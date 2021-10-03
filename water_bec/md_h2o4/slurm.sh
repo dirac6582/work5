@@ -1,0 +1,1 @@
+#!/bin/shnumber=0 # 現在のdirを取得CURRENT_DIR=$(pwd) while test $number -le 14do     #working dirへ移動    cd ${CURRENT_DIR}/water_$number/     #slurmファイルの実行    sbatch sample4.slurm     number=`expr $number + 1`done

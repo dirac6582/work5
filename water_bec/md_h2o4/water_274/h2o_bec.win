@@ -1,0 +1,43 @@
+# num_wann sould be equal to nbnd
+# default nbnd in insulater is electron num/2
+num_wann        = 4
+num_iter        = 100
+ 
+translate_home_cell=true
+ 
+guiding_centres = true
+ 
+# level of verbosity of the output from 0 to 3(high)
+iprint          = 2
+ 
+wannier_plot=.true.
+# wannier function output format
+wannier_plot_format = cube
+wannier_plot_mode = molecule
+ 
+ 
+begin atoms_cart
+ang
+ O 0.0099 0.0099 0.0
+ H 1.8270141837205 -0.22677645524937 0.0064558769091819
+ H -0.21533776458698 1.8273558088152 0.0027270751980177
+end atoms_cart
+ 
+begin projections
+random
+end projections
+ 
+# ang or bohr
+begin unit_cell_cart
+bohr
+12.00000000000   0.00000000000000 0.00000000000000
+ 0.00000000000000 12.0000000000000 0.00000000000000
+ 0.00000000000000 0.00000000000000 12.0000000000000
+end unit_cell_cart
+ 
+mp_grid    : 1 1 1
+gamma_only : true
+ 
+begin kpoints
+0.0 0.0 0.0
+end kpoints
