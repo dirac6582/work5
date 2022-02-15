@@ -1,0 +1,11 @@
+h2o phonon
+&inputph
+     tr2_ph = 1.0d-14,
+     prefix = 'h2o_bec'
+     outdir = './work/'
+     trans  = .true.
+     zue    = .true.
+     epsil  = .true.
+   asr      = .true.
+/
+0 0 0
