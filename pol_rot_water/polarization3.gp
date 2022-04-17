@@ -4,7 +4,7 @@
 
 
 set term pdfcairo
-set output "polarization_0418.pdf"
+set output "polarization_0418_2.pdf"
 #set logscale xy
 set xlabel "Angle [度]"
 set ylabel "Dipole Moment [D]"

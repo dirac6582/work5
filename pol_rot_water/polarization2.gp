@@ -1,3 +1,5 @@
+# 
+
 set term pdfcairo
 set output "polarization.pdf"
 #set logscale xy
